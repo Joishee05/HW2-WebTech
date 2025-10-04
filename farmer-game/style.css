@@ -1,0 +1,96 @@
+/* ================================
+   Root Variables
+   ================================ */
+:root {
+  --fg: #111;
+  --bg: #fafafa;
+  --ui: #f0f0f0;
+}
+
+/* ================================
+   Global Reset
+   ================================ */
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  background: var(--bg);
+  color: var(--fg);
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+}
+
+/* ================================
+   Layout Containers
+   ================================ */
+#game {
+  display: block;
+  margin: 24px auto 12px;
+  background: white;
+  border: 1px solid #ddd;
+}
+
+#ui {
+  max-width: 800px;
+  margin: 0 auto;
+  background: var(--ui);
+  border: 1px solid #ddd;
+  padding: 8px 12px;
+  border-radius: 8px;
+}
+
+.row {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  margin: 6px 0;
+}
+
+/* ================================
+   UI Elements
+   ================================ */
+button {
+  padding: 6px 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  background: white;
+  cursor: pointer;
+}
+
+/* ================================
+   Text Helpers
+   ================================ */
+.hint {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+kbd {
+  background: #eee;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 0 4px;
+}
+code {
+  background: #f4f4f4;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 2px 4px;
+}
+pre {
+  background: #f4f4f4;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 8px;
+  overflow-x: auto;
+}
+a {
+  color: #0066cc;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
